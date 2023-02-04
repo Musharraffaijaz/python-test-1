@@ -187,3 +187,114 @@ import math
 #         print("The answer is incorrect!")
 #     question_num += 1
 
+#ROCK PAPER IN PYTHON
+# import random
+# options = ("rock", "paper", "scissors")
+# running = True
+#
+# while running:
+#
+#     player = None
+#     computer = random.choice(options)
+#
+#     while player not in options:
+#         player = input("Enter a choice (rock, paper, scissors): ")
+#
+#     print(f"Player: {player}")
+#     print(f"Computer: {computer}")
+#
+#     if player == computer:
+#         print("It's a tie!")
+#     elif player == "rock" and computer == "scissors":
+#         print("You win!")
+#     elif player == "paper" and computer == "rock":
+#         print("You win!")
+#     elif player == "scissors" and computer == "paper":
+#         print("You win!")
+#     else:
+#         print("You lose!")
+#
+#     if not input("Play again? (y/n): ").lower() == "y":
+#         running = False
+#
+# print("Thanks for playing!")
+
+#ENCRYPT AND DECRYPT MESSAGE
+
+# import random
+# import string
+#
+# encryptString = string.ascii_letters + " " + string.punctuation + " " + string.hexdigits + string.octdigits
+# encryptString = list(encryptString)
+# key = encryptString.copy()
+# random.shuffle(key)
+#
+# #ENCRYPT
+# input_text = input("Enter a message to encrypt: ")
+# encrypted_text = ""
+#
+# for everyAlphabet in input_text :
+#     index_alphabet = encryptString.index(everyAlphabet)
+#     encrypted_text += key[index_alphabet]
+#
+#
+# print(f"original message : {input_text}")
+# print(f"encrypted message: {encrypted_text}")
+
+#counter app in python
+
+# import time
+#
+# def  count(end, start = 0):
+#     for x in range(start, end + 1):
+#         print(x, end=" ")
+#         time.sleep(1)
+#
+#     print("Bhai jake phadle!!")
+#
+#
+# count(10)
+
+# def shipping_label(*args, **kwargs):
+#     for arg in args:
+#         print(arg, end=" ")
+#     print()
+#
+#     if "apt" in kwargs:
+#         print(f"{kwargs.get('street')} {kwargs.get('apt')}")
+#     elif "pobox" in kwargs:
+#         print(f"{kwargs.get('street')}")
+#         print(f"{kwargs.get('pobox')}")
+#     else:
+#         print(f"{kwargs.get('street')}")
+#
+#     print(f"{kwargs.get('city')}, {kwargs.get('state')} {kwargs.get('zip')}")
+#
+# shipping_label("Dr.", "Spongebob", "Squarepants",
+#                street="123 Fake St.",
+#                pobox="PO box #1001",
+#                city="Detroit",
+#                state="MI",
+#                zip="54321")
+
+#EXCEPTION IN PYTHON
+
+# try:
+#     numerator = int(input("Enter a number to divide: "))
+#     denominator = int(input("Enter a number to divide by: "))
+#     result = numerator / denominator
+# except ZeroDivisionError as e:
+#     print(e)
+#     print("You can't divide by zero! idiot!")
+# except ValueError as e:
+#     print(e)
+#     print("Enter only numbers plz")
+# except Exception as e:
+#     print(e)
+#     print("something went wrong :(")
+# else:
+#     print(result)
+# finally:
+#     print("This will always execute")
+
+
